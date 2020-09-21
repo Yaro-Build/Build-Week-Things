@@ -1,0 +1,14 @@
+#leftBar{
+    float: left;
+	width: 20%;
+}
+
+#midBar{
+    float: middle;
+	width: 20%;
+}
+
+#rightBar{
+    float: right;
+	width: 20%;
+}

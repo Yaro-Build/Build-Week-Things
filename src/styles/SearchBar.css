@@ -1,0 +1,14 @@
+.searchBar{
+    width: 33.3%;
+    border: 1px grey solid;
+	padding: 10px;
+    border-radius: 15px; /* Determines how round the corners of our box are */
+}
+
+.container {
+display: flex;
+}
+
+.container-header {
+display: flex;
+}

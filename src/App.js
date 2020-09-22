@@ -4,6 +4,7 @@ import './App.css';
 import Header from './component/Header'
 import SearchBar from './component/SearchBar'
 import './styles/SearchBar.css'
+import Carousel from './component/Carousel/Carousel'
 
 
 // Main document that outputs things to the webpage
@@ -12,6 +13,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
+        <Carousel />
         <SearchBar />
         <br />
         <SearchBar id="leftBar"/>

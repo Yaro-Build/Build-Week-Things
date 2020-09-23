@@ -1,13 +1,13 @@
 import React from "react"
-import '../styles/SearchBar.css'
-import LocBar from './LocBar'
-import NameBar from './NameBar'
-import RoleBar from './RoleBar'
-import YearBar from './YearBar'
+import '../SearchBars/styles/SearchBar.css'
+import LocBar from '../SearchBars/LocBar'
+import NameBar from '../SearchBars/NameBar'
+import RoleBar from '../SearchBars/RoleBar'
+import YearBar from '../SearchBars/YearBar'
 
-import dataR from './DataRep'
+import dataR from '../../dataCol/dataR'
 
-import '../App.css';
+import '../../App.css';
 
 
 const SearchBar = () => {

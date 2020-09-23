@@ -1,7 +1,7 @@
 import React from "react"
-import '../styles/smallBars.css'
-import '../styles/SearchBar.css'
-import DropDownOpt from './DropDownOpt'
+import './styles/smallBars.css'
+import './styles/SearchBar.css'
+import DropDownOpt from '../../dataCol/DropDownOpt'
 
 const LocBar = ({data}) =>{
     console.log(data)

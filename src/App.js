@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './component/Header'
-import SearchBar from './component/SearchBar'
+import SearchBar from './component/SearchBars/SearchBar'
 
 
 // Main document that outputs things to the webpage

@@ -1,7 +1,7 @@
 import React from "react"
-import '../styles/smallBars.css'
-import '../styles/SearchBar.css'
-import DropDownOpt from './DropDownOpt'
+import '../SearchBars/styles/smallBars.css'
+import '../SearchBars/styles/SearchBar.css'
+import DropDownOpt from '../../dataCol/DropDownOpt'
 
 function NameBar({data}){
     return(

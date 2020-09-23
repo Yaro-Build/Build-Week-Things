@@ -41,6 +41,10 @@
   }
 }
 
+.filter-cont{
+  display: flex;
+}
+
 .App {
   background: rgb(255, 255, 255);
   width: 100vw;

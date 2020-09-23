@@ -1,6 +1,13 @@
 import React from "react"
 import '../styles/SearchBar.css'
+import LocBar from './LocBar'
+import NameBar from './NameBar'
+import RoleBar from './RoleBar'
+import YearBar from './YearBar'
 
+import dataR from './DataRep'
+
+import '../App.css';
 
 
 const SearchBar = () => {
@@ -36,15 +43,26 @@ const SearchBar = () => {
             }
         } */
     }
-
+    // <LocBar />
+    
+    console.log(dataR)
     return (
         <div>
             <input className="searchBar" onChange={(e) => searchData(e)} type="text" name="searchBar" placeholder="Search..." />
+            <br />
+            <br />
+             <div class = "filter-cont"> 
+                <LocBar data = {dataR}/>
+                <NameBar data = {dataR}/>
+                <YearBar data = {dataR}/>
+                <RoleBar data = {dataR}/>
+            </div>  
+
             {filteredArray.length > 0 ? filteredArray.map((name,index) => {
                 return <p key = {index}>{name}</p>
             })
                 :
-                ourNames.map((name,index) => { return <p key = {index}>{name}</p> })}
+                ourNames.map((name,index) => { return <p key = {index} >{name}</p> })}
         </div>
     )
 }

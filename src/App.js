@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './component/Header'
+import Header from './component/Header/Header'
 import SearchBar from './component/SearchBar'
 import './styles/SearchBar.css'
 import Carousel from './component/Carousel/Carousel'
@@ -16,9 +16,7 @@ function App() {
         <Carousel />
         <SearchBar />
         <br />
-        <SearchBar id="leftBar"/>
-        
-        
+        <SearchBar id="leftBar" />
       </header>
     </div>
   );

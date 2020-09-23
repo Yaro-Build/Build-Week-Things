@@ -1,10 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Header from './component/Header'
-import SearchBar from './component/SearchBar'
-import './styles/SearchBar.css'
-
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./component/Header";
+import SearchBar from "./component/SearchBar";
+import "./styles/SearchBar.css";
+import Carousel from "./component/Carousel/Carousel";
+import Profile from "./component/Profile/Profile";
+import testData from "./component/Profile/testData";
+import "./component/Profile/profile.css";
 
 // Main document that outputs things to the webpage
 function App() {
@@ -12,14 +15,17 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
-        <SearchBar />
+        <Carousel />
+
         <br />
-        <SearchBar id="leftBar"/>
-        
-        
+        <SearchBar />
       </header>
+      <div className="profile-container">
+        {testData.map((item) => (
+          <Profile profile={item} />
+        ))}
+      </div>
     </div>
   );
 }
-
 export default App;

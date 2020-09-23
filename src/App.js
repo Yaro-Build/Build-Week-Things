@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import SearchBar from "./component/SearchBars/SearchBar";
 import Header from "./component/Header/Header";
@@ -17,11 +16,12 @@ function App() {
         <br />
         <SearchBar />
       </header>
-      <div className='profile-container'>
-        {testData.map((item) => (
-          <Profile profile={item} />
+
+      {/* <div className='profile-container'>
+        {testData.map((item, index) => (
+          <Profile key={index} profile={item} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 }

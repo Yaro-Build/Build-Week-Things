@@ -10,7 +10,7 @@ const LocBar = ({data}) =>{
             <select>
                 {
                     data && data.map((infoP,index) => (
-                            <DropDownOpt key = {infoP.id} option = {infoP.loc} /> 
+                            <DropDownOpt key = {infoP.id} option = {infoP.Location} /> 
                     ))
                 }
             </select>                  

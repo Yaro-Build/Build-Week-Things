@@ -6,8 +6,7 @@ import RoleBar from '../SearchBars/RoleBar'
 import YearBar from '../SearchBars/YearBar'
 import Profile from "../Profile/Profile";
 import testData from "../Profile/testData";
-
-import dataR from '../../dataCol/dataR'
+import '../Profile/profile.css'
 
 import '../../App.css';
 
@@ -40,31 +39,50 @@ const SearchBar = () => {
         setFilteredArray(arrayVar)
     }
 
+    const findDups = (arg) => {
+        let uniArr = arg.slice().sort();
+        let res = [];
+
+        for( let i = 0; i< uniArr.length - 1;i++){
+            if(uniArr[i + 1] == uniArr[i]){
+                res.push(uniArr[i]);
+            }
+        }
+        return res;
+    }
+
     return (
         <div>
             <input className="searchBar" onChange={(e) => searchData(e)} type="text" name="searchBar" placeholder="Search..." />
             <br />
             <br />
             <div className="filter-cont">
-                <LocBar data={dataR} />
-                <NameBar data={dataR} />
-                <YearBar data={dataR} />
-                <RoleBar data={dataR} />
+                <LocBar data={testData} />
+                <NameBar data={testData} />
+                <YearBar data={testData} />
+                <RoleBar data={testData} />
             </div>
 
+            <div className = 'profile-container'>
             {filteredArray.length > 0 ?
                 filteredArray.map((item, index) => {
                     return (
+                        
                         <Profile key = {index} profile = {item}/>
+                        
                     )
                 })
                 :
                 testData.map((item, index) => {
                     return (
+                        
                         <Profile key = {index} profile = {item}/>
+                        
                     )
                 })
             }
+            </div>
+
         </div>
     )
 }

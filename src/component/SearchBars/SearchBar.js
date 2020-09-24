@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState, useEffect } from "react";
 import '../SearchBars/styles/SearchBar.css'
 import LocBar from '../SearchBars/LocBar'
 import NameBar from '../SearchBars/NameBar'
@@ -6,14 +6,21 @@ import RoleBar from '../SearchBars/RoleBar'
 import YearBar from '../SearchBars/YearBar'
 import Profile from "../Profile/Profile";
 import testData from "../Profile/testData";
+import ApiService from "./services/ApiService";
 import '../Profile/profile.css'
-
 import '../../App.css';
 
 const SearchBar = () => {
+    const [userData, setUserData] = useState([]);
+    const [filteredArray, setFilteredArray] = useState([])
 
-    const ourNames = ["Yaro", "Amy", "Bob"]
-    const [filteredArray, setFilteredArray] = React.useState([])
+    useEffect(() => {
+        console.log("hook running");
+        ApiService.getUsersFromApi().then(data => {
+          setUserData(data);
+        });
+      }, [])
+      console.log("Data is here", userData);
 
     const searchData = (e) => {
         const value = e.target.value;
@@ -67,22 +74,17 @@ const SearchBar = () => {
             {filteredArray.length > 0 ?
                 filteredArray.map((item, index) => {
                     return (
-                        
                         <Profile key = {index} profile = {item}/>
-                        
                     )
                 })
                 :
                 testData.map((item, index) => {
                     return (
-                        
-                        <Profile key = {index} profile = {item}/>
-                        
+                        <Profile key = {index} profile = {item}/>      
                     )
                 })
             }
             </div>
-
         </div>
     )
 }

@@ -4,12 +4,12 @@ const ApiService = {
             
             .then(response => response.json())
             .then(json => {
-                console.log(json)
                 var mappedData = [];
                 json.map((user, index) => (
                     mappedData.push(
                         {
                             "id":user.id,
+                            "img": user.img,
                             "name":user.name,
                             "start_date":user.start_date,
                             "location":user.location,
@@ -18,7 +18,6 @@ const ApiService = {
                         }
                     )
                 ))
-                console.log(mappedData)
                 return mappedData
     })
     }

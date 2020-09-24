@@ -1,92 +1,81 @@
-import React, { useState, useEffect } from "react";
-import '../SearchBars/styles/SearchBar.css'
-import LocBar from '../SearchBars/LocBar'
-import NameBar from '../SearchBars/NameBar'
-import RoleBar from '../SearchBars/RoleBar'
-import YearBar from '../SearchBars/YearBar'
+import React, { useState } from "react";
+import "../SearchBars/styles/SearchBar.css";
+import LocBar from "../SearchBars/LocBar";
+import NameBar from "../SearchBars/NameBar";
+import RoleBar from "../SearchBars/RoleBar";
+import YearBar from "../SearchBars/YearBar";
 import Profile from "../Profile/Profile";
-import testData from "../Profile/testData";
-import ApiService from "./services/ApiService";
-import '../Profile/profile.css'
-import '../../App.css';
 
-const SearchBar = () => {
-    const [userData, setUserData] = useState([]);
-    const [filteredArray, setFilteredArray] = useState([])
+import "../Profile/profile.css";
+import "../../App.css";
 
-    useEffect(() => {
-        console.log("hook running");
-        ApiService.getUsersFromApi().then(data => {
-          setUserData(data);
-        });
-      }, [])
-      console.log("Data is here", userData);
+const SearchBar = ({ userData }) => {
+  const [filteredArray, setFilteredArray] = useState([]);
+  
+  console.log("dadaataa", userData);
+  const searchData = (e) => {
+    const value = e.target.value;
+    let ourProf = [];
 
-    const searchData = (e) => {
-        const value = e.target.value;
-        let ourProf = []
+    let arrayVar = userData.filter((item) => {
+      if (item.name.toLowerCase().includes(value)) {
+        return true;
+      }
+      if (item.location.toLowerCase().includes(value)) {
+        return true;
+      }
+      if (item.job_title.toLowerCase().includes(value)) {
+        return true;
+      }
+      if (item.bio.toLowerCase().includes(value)) {
+        return true;
+      }
+      return false;
+    });
+    setFilteredArray(arrayVar);
+  };
 
+  const findDups = (arg) => {
+    let uniArr = arg.slice().sort();
+    let res = [];
 
-        let arrayVar = testData.filter((item) => {
-            if(item.Name.toLowerCase().includes(value))
-            {
-                return true;
-            }
-            if(item.Location.toLowerCase().includes(value)){
-                return true;
-            }
-            if(item.Role.toLowerCase().includes(value)){
-                return true;
-            }
-            if(item.Bio.toLowerCase().includes(value)){
-                return true;
-            }
-            return false; 
-        })
-        setFilteredArray(arrayVar)
+    for (let i = 0; i < uniArr.length - 1; i++) {
+      if (uniArr[i + 1] == uniArr[i]) {
+        res.push(uniArr[i]);
+      }
     }
+    return res;
+  };
 
-    const findDups = (arg) => {
-        let uniArr = arg.slice().sort();
-        let res = [];
+  return (
+    <div>
+      <input
+        className='searchBar'
+        onChange={(e) => searchData(e)}
+        type='text'
+        name='searchBar'
+        placeholder='Search...'
+      />
+      <br />
+      <br />
+      <div className='filter-cont'>
+        <LocBar data={userData} />
+        <NameBar data={userData} />
+        <YearBar data={userData} />
+        <RoleBar data={userData} />
+      </div>
 
-        for( let i = 0; i< uniArr.length - 1;i++){
-            if(uniArr[i + 1] == uniArr[i]){
-                res.push(uniArr[i]);
-            }
-        }
-        return res;
-    }
+      <div className='profile-container'>
+        {filteredArray.length > 0
+          ? filteredArray.map((item, index) => {
+              return <Profile key={index} profile={item} />;
+            })
+          : userData.map((item, index) => {
+              return <Profile key={index} profile={item} />;
+            })}
+      </div>
+    </div>
+  );
+};
 
-    return (
-        <div>
-            <input className="searchBar" onChange={(e) => searchData(e)} type="text" name="searchBar" placeholder="Search..." />
-            <br />
-            <br />
-            <div className="filter-cont">
-                <LocBar data={testData} />
-                <NameBar data={testData} />
-                <YearBar data={testData} />
-                <RoleBar data={testData} />
-            </div>
-
-            <div className = 'profile-container'>
-            {filteredArray.length > 0 ?
-                filteredArray.map((item, index) => {
-                    return (
-                        <Profile key = {index} profile = {item}/>
-                    )
-                })
-                :
-                testData.map((item, index) => {
-                    return (
-                        <Profile key = {index} profile = {item}/>      
-                    )
-                })
-            }
-            </div>
-        </div>
-    )
-}
-
-export default SearchBar
+export default SearchBar;

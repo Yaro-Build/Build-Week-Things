@@ -10,7 +10,7 @@ function NameBar({data}){
 			<select>
                 {
                     data && data.map((infoP,index) => (
-                       <DropDownOpt key = {infoP.id} option = {infoP.name} /> 
+                       <DropDownOpt key = {infoP.id} option = {infoP.Name} /> 
                     ))
                 }
             </select>

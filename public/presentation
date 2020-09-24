@@ -1,0 +1,76 @@
+
+
+
+Presentation Ideas/ Notes
+September 25, 2020
+{Over_"React"_Ors}
+~ 15 minutes ~
+
+----
+Tom introduction of the {Over_"React"_Ors}
+Introduce teams members
+
+----
+Sprint Objectives
+Omar front-end  -> Charlie on API -> Yaro/Sabia on functionality -> ....
+
+----
+Demo time!!! (Tom OR Charlie shares screen)
+...
+TOP TO BOTTOM
+*Surabhi TBD*
+
+Share screen and recap of all the features in each section
+Header - bootstrap, 'must have' -> carousel {Tom}
+Optimizing the search bar {Yaro/Sabia}
+Drop down menus {Yaro/Sabia}
+Profile cards {Omar}
+Database API *very important* {Charlie}
+
+----
+TEST THAT THANG *audience applause*
+
+
+----
+Risks:
+
+Cyberciminals! (next sprint)
+
+Accessiblity (next sprint!)
+No Admin Area - cannot manage webpage without opening the code
+
+
+Impediments:
+
+Lack of experience
+Lack of time 
+Lack of team consolidation (but we also got through it!)
+
+Solutions:
+
+These concerns will be addressed during our next sprint. (ALL)
+
+
+----
+Questions:
+
+How have you made the application responsive for Desktop and Mobile?
+-- Testing on desktop and mobile while developing
+-- We have reasonable evidence.... no further questions...
+
+Run the tests!
+-- have to make sure all tests pass
+
+Can you take us through a merge?
+-- Yes, Yaro can!
+
+Where is your documentation?
+-- Unfortunately we could not complete this objective within the given timeframe
+
+Did you copy code from the internet?
+-- Carousel was a good option for the header, and implement Bootstrap. We changed the code to fit into the framework that we had already contructed
+
+
+
+FOR GOOOOOGGGGLLEEE
+-- what is CI automated build?

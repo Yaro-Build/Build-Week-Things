@@ -7,7 +7,6 @@ export default function Profile(props) {
   const profile = props.profile;
   return (
     <div class='prof_card'>
-    
       <img
         src={profile.image}
         alt=''

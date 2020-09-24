@@ -10,7 +10,7 @@ function YearBar({data}){
             <select>
                 {
                     data && data.map((infoP,index) => (
-                       <DropDownOpt key = {infoP.id} option = {infoP.year} /> 
+                       <DropDownOpt key = {infoP.id} option = {infoP.Joining_date} /> 
                     ))
                 }
             </select>

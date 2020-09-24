@@ -5,7 +5,7 @@ import "./testData";
 export default function Profile(props) {
   const profile = props.profile;
   return (
-    <div class='prof_card'>
+    <div className='prof_card'>
       <strong style={{ color: "#eb7b28" }}>{profile.start}</strong>
       <img
         src={profile.image}

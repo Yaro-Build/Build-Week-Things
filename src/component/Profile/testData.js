@@ -1,4 +1,5 @@
 export default [
+
     {
       id: 1,
       Name: "Paris Mcallister",
@@ -20,7 +21,6 @@ export default [
       Location: "London",
       Role: "Software Engineering",
       Bio: "Kinda want to be an actor someday."
-  
     },
   
     {
@@ -46,4 +46,3 @@ export default [
         " Owns a religious horror statue."
     }
   ];
-  

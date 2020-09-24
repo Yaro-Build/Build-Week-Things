@@ -1,12 +1,13 @@
 import React from "react";
 import "./profile.css";
 import "./testData";
+import InfoModal from "./modal"
 
 export default function Profile(props) {
   const profile = props.profile;
   return (
     <div class='prof_card'>
-      <strong style={{ color: "#eb7b28" }}>{profile.start}</strong>
+    
       <img
         src={profile.image}
         alt=''
@@ -25,9 +26,7 @@ export default function Profile(props) {
       <p className='prof_date'> Joining Date: {profile.Joining_date}</p>
       <p className='prof_bio'>{profile.Bio}</p>
       <p>
-        <button style={{ backgroundColor: "#0a7496", borderRadius: "25PX" }}>
-          Contact
-        </button>
+        <InfoModal profile={profile}/>
       </p>
     </div>
   );

@@ -13,14 +13,14 @@ export default function Carousel () {
       <img style = {{height:"400px", objectFit:"contain"}} src="https://2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/Coding-Bootcamp-Ratings-Dice-1920x1200.png" className="d-block w-100" alt="Teaching code"/>
       <div className="carousel-caption d-none d-md-block">
     
-        <h4 style= {{color: "#0a7496"}}>Full-time mentoring and code alongs to make sure you understand key concepts.</h4>
+        <h4 style= {{color: "#0a7496", marginTop:"25px"}}>Full-time mentoring and code-alongs to make sure you understand key concepts.</h4>
       </div>
     </div>
     <div className="carousel-item">
       <img style = {{height: "400px", width: "400px", objectFit:"contain"}} src="http://kids.gocodemy.com/img/codingguy.png" className="d-block w-100" alt="Learning code"/>
       <div className="carousel-caption d-none d-md-block">
         
-        <h4 style= {{color: "#0a7496"}}>Do extra research, learn courses and peak your curiosity.</h4>
+        <h4 style= {{color: "#0a7496"}}>Do extra research, learn, and peak your curiosity.</h4>
       </div>
     </div>
     <div className="carousel-item">

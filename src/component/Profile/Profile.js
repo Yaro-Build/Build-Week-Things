@@ -22,8 +22,8 @@ export default function Profile(props) {
       </h1>
       <h5 className='prof_role'>{profile.job_title}</h5>
       <h5 className='prof_location'>{profile.location}</h5>
-      <p className='prof_date'> Joining Date: {profile.start_date}</p>
-      <p className='prof_bio'>{profile.bio}</p>
+      
+      
       <p>
         <InfoModal profile={profile} />
       </p>

@@ -59,7 +59,7 @@ const SearchBar = ({ userData }) => {
       <br />
       <br />
       <div className='filter-cont'>
-        <LocBar data={userData} />
+        <LocBar  data={userData} />
         <NameBar data={userData} />
         <YearBar data={userData} />
         <RoleBar data={userData} />

@@ -6,8 +6,8 @@ import DropDownOpt from '../../dataCol/DropDownOpt'
 function NameBar({data}){
     return(
         <div> 
-            <label> Filter by Name: </label>
-			<select>
+            <label> Filter by Name:&nbsp; </label>
+            <select style={{borderRadius:"100px",}}>
                 {
                     data && data.map((infoP,index) => (
                        <DropDownOpt key = {infoP.id} option = {infoP.name} /> 

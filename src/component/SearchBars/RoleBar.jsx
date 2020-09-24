@@ -7,8 +7,8 @@ function RoleBar({data}){
  
     return(
         <div> 
-            <label> Filter by Role: </label>
-			<select>
+            <label> Filter by Role:&nbsp; </label>
+            <select style={{borderRadius:"100px",}}>
                 {
                     data && data.map((infoP,index) => (
                        <DropDownOpt key = {infoP.id} option = {infoP.job_title} /> 

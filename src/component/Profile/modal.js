@@ -16,10 +16,10 @@ function InfoModal(props) {
 
             <Modal show={show} onHide={handleClose} >
                 <Modal.Header >
-                    <Modal.Title style={{ color: "#eb7b28", textAlign:"center" }}>{profile.Name} <br>
+                    <Modal.Title style={{ color: "#eb7b28", textAlign:"center" }}>{profile.name} <br>
                     </br> 
                     <img
-        src={profile.image}
+        src={profile.img}
         alt=''
         style={{
           width: "35%",
@@ -29,13 +29,9 @@ function InfoModal(props) {
         }}
       /></Modal.Title>
                 </Modal.Header>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>ROLE:</strong> <br /> <h4>{profile.Role}</h4></Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>LOCATION:</strong><br /> <h4>{profile.Location}</h4></Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}> EMPLOYEE NUMBER: </strong> <br /><h4>{profile.EmployeeNumber} </h4></Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>DOB:</strong>  <br /><h4>{profile.Dob}</h4> </Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>NATIONALITY:</strong> <br /><h4>{profile.Nationality} </h4></Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>BIO:</strong> <br /><h4>{profile.Bio}</h4></Modal.Body>
-                <Modal.Body> <strong style={{color:"#eb7b28"}}>CONTACT:</strong> <br /><h4>{profile.Contact}</h4> </Modal.Body>
+                <Modal.Body> <strong style={{color:"#eb7b28"}}>ROLE:</strong> <br /> <h4>{profile.job_title}</h4></Modal.Body>
+                <Modal.Body> <strong style={{color:"#eb7b28"}}>LOCATION:</strong><br /> <h4>{profile.location}</h4></Modal.Body>
+                <Modal.Body> <strong style={{color:"#eb7b28"}}>BIO:</strong> <br /><h4>{profile.bio}</h4></Modal.Body>
                 <Modal.Footer>
                     <Button onClick={handleClose} variant="flat" style={{backgroundColor: "#0a7496", color:"white" }} >
                         Close

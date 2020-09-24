@@ -1,194 +1,228 @@
 [
-    {
-      "id": 1,
-      "name": "Ventsislav Antov",
-      "start_date": "07.09.20",
-      "location": "Amsterdam",
-      "job_title": "Software Engineer",
-      "bio": "Recent graduate, ex-YouTuber, Elsevier newbie, boxing and gym guru and some experience in coding."
-    },
-    {
-      "id": 2,
-      "name": "Gabrielė Stravinskaitė",
-      "start_date": "07.09.20",
-      "location": "Amsterdam",
-      "job_title": "DevOps Engineer",
-      "bio": "Round-earther, anti-anti-vaxer, pro-5G and pro-AI Statistics postgraduate who believes that Covid-19 exists. Owns a religious horror statue."
-    },
-    {
-      "id": 3,
-      "name": "Samuel Syed",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "DevOps",
-      "bio": "MSc in Physics and a tech enthusiast with an insatiable curiosity and desire for self-development."
-    },
-    {
-      "id": 4,
-      "name": "Mohammad Dasseh",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": "Ex-Mechanical Engineer. When I’m not at work I enjoy mountain climbing, running and reading."
-    },
-    {
-      "id": 5,
-      "name": "Chris Palmer",
-      "start_date": "07.09.20",
-      "location": "Amsterdam",
-      "job_title": "DevOps",
-      "bio": "President of the Paul Morgan Fan Club"
-    },
-    {
-      "id": 6,
-      "name": "Lawrence Logan",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "DevOps",
-      "bio": "Into sailing, travelling and going to the pub. I will gladly look after your pet, and make you a cuppa."
-    },
-    {
-      "id": 7,
-      "name": "Luke Marmion",
-      "start_date": "07.09.20",
-      "location": "London (1AS)",
-      "job_title": "DevOps",
-      "bio": "TIO Core Engineering, pesto enthusiast, Chem Eng grad"
-    },
-    {
-      "id": 8,
-      "name": "Celine Clausen",
-      "start_date": "07.09.20",
-      "location": "Aalborg",
-      "job_title": "Software Engineer",
-      "bio": "Recently graduated as a MSc of Economics, interested in Machine Learning, excellent at ‘cooking’ take away for dinner, dressage rider and like to go for a short run."
-    },
-    {
-      "id": 9,
-      "name": "Sophie Clark",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "DevOps Engineer",
-      "bio": "A MSc Computer Science graduate currently learning to cook."
-    },
-    {
-      "id": 10,
-      "name": "Venetia Miller",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": "Newcastle university cheerleading pres 2018 , likes to draw animals ( especially cute dogs), is passionate about ethics and oncology !!"
-    },
-    {
-      "id": 11,
-      "name": "Muntazir Qasim",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": "Runner-Up finish in my Year 4 class spelling competition"
-    },
-    {
-      "id": 12,
-      "name": "Dafydd James",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": "Kahoot enthusiast"
-    },
-    {
-      "id": 13,
-      "name": "Sayma Ahmed",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Network Engineer",
-      "bio": "Just a friendly face :)"
-    },
-    {
-      "id": 14,
-      "name": "Thea Gordon-Wingfield",
-      "start_date": "07.09.20",
-      "location": "London (1AS)",
-      "job_title": "Software Engineer",
-      "bio": ""
-    },
-    {
-      "id": 15,
-      "name": "Rebecca Pavcic",
-      "start_date": "07.09.20",
-      "location": "London (1AS)",
-      "job_title": "Software Engineer",
-      "bio": ""
-    },
-    {
-      "id": 16,
-      "name": "Andreas Tryfonos",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "Software Engineer",
-      "bio": "Recent graduate, Love travelling, reading, mixing music and sports"
-    },
-    {
-      "id": 17,
-      "name": "Borsi Csokas",
-      "start_date": "07.09.20",
-      "location": "Aalborg",
-      "job_title": "DevOps System Engineer",
-      "bio": "Crazy cat lady in the making ;)"
-    },
-    {
-      "id": 18,
-      "name": "Liam Kemmitt",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "DevOps Engineer",
-      "bio": ""
-    },
-    {
-      "id": 19,
-      "name": "Sneha Manikandan",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "Quality Engineer",
-      "bio": "Nature Lover, Traveller"
-    },
-    {
-      "id": 20,
-      "name": "Charlie Martin",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": ""
-    },
-    {
-      "id": 21,
-      "name": "Omar Shah",
-      "start_date": "07.09.20",
-      "location": "Amsterdam",
-      "job_title": "DevOps Engineer",
-      "bio": "Recent Graduate and food enthusiast. Critical of the tech industry, but optimistic that we can use AI for good."
-    },
-    {
-      "id": 22,
-      "name": "Sabia Egan",
-      "start_date": "07.09.20",
-      "location": "Oxford",
-      "job_title": "Software Engineer",
-      "bio": "Biomedical Science graduate. Enjoy cycling and wine."
-    },
-    {
-      "id": 23,
-      "name": "Angharad Beazley",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "Software Engineer",
-      "bio": "Recent graduate into walking, travelling and anything dog related."
-    },
-    {
-      "id": 24,
-      "name": "Avni Bhatt",
-      "start_date": "07.09.20",
-      "location": "London",
-      "job_title": "Software Engineer",
-      "bio": ""
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Ventsislav Antov",
+    "start_date": "07.09.20",
+    "location": "Amsterdam",
+    "job_title": "Software Engineer",
+    "bio": "Recent graduate, ex-YouTuber, Elsevier newbie, boxing and gym guru and some experience in coding."
+  },
+  {
+    "id": 2,
+    "name": "Gabrielė Stravinskaitė",
+    "img": "./Gabriele.png",
+    "start_date": "07.09.20",
+    "location": "Amsterdam",
+    "job_title": "DevOps Engineer",
+    "bio": "Round-earther, anti-anti-vaxer, pro-5G and pro-AI Statistics postgraduate who believes that Covid-19 exists. Owns a religious horror statue."
+  },
+  {
+    "id": 3,
+    "name": "Samuel Syed",
+    "img": "./Samuel.png",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "DevOps",
+    "bio": "MSc in Physics and a tech enthusiast with an insatiable curiosity and desire for self-development."
+  },
+  {
+    "id": 4,
+    "name": "Mohammad Dasseh",
+    "img": "./Mohammad.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": "Ex-Mechanical Engineer. When I’m not at work I enjoy mountain climbing, running and reading."
+  },
+  {
+    "id": 5,
+    "name": "Chris Palmer",
+    "start_date": "07.09.20",
+    "location": "Amsterdam",
+    "job_title": "DevOps",
+    "bio": "President of the Paul Morgan Fan Club"
+  },
+  {
+    "id": 6,
+    "name": "Lawrence Logan",
+    "img": "./Lawrence.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "DevOps",
+    "bio": "Into sailing, travelling and going to the pub. I will gladly look after your pet, and make you a cuppa."
+  },
+  {
+    "id": 7,
+    "name": "Luke Marmion",
+    "img": "./Luke.png",
+    "start_date": "07.09.20",
+    "location": "London (1AS)",
+    "job_title": "DevOps",
+    "bio": "TIO Core Engineering, pesto enthusiast, Chem Eng grad"
+  },
+  {
+    "id": 8,
+    "name": "Celine Clausen",
+    "img": "./Celine.png",
+    "start_date": "07.09.20",
+    "location": "Aalborg",
+    "job_title": "Software Engineer",
+    "bio": "Recently graduated as a MSc of Economics, interested in Machine Learning, excellent at ‘cooking’ take away for dinner, dressage rider and like to go for a short run."
+  },
+  {
+    "id": 9,
+    "name": "Sophie Clark",
+    "img": "./Sophie.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "DevOps Engineer",
+    "bio": "A MSc Computer Science graduate currently learning to cook."
+  },
+  {
+    "id": 10,
+    "name": "Venetia Miller",
+    "img": "./Venetia.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": "Newcastle university cheerleading pres 2018 , likes to draw animals ( especially cute dogs), is passionate about ethics and oncology !!"
+  },
+  {
+    "id": 11,
+    "name": "Muntazir Qasim",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": "Runner-Up finish in my Year 4 class spelling competition"
+  },
+  {
+    "id": 12,
+    "name": "Dafydd James",
+    "img": "./Dafydd.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": "Kahoot enthusiast"
+  },
+  {
+    "id": 13,
+    "name": "Sayma Ahmed",
+    "img": "./Sayma.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Network Engineer",
+    "bio": "Just a friendly face :)"
+  },
+  {
+    "id": 14,
+    "name": "Thea Gordon-Wingfield",
+    "start_date": "07.09.20",
+    "location": "London (1AS)",
+    "job_title": "Software Engineer",
+    "bio": ""
+  },
+  {
+    "id": 15,
+    "name": "Rebecca Pavcic",
+    "img": "./Rebecca.png",
+    "start_date": "07.09.20",
+    "location": "London (1AS)",
+    "job_title": "Software Engineer",
+    "bio": ""
+  },
+  {
+    "id": 16,
+    "name": "Andreas Tryfonos",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "Software Engineer",
+    "bio": "Recent graduate, Love travelling, reading, mixing music and sports"
+  },
+  {
+    "id": 17,
+    "name": "Borsi Csokas",
+    "img": "./Borsi.png",
+    "start_date": "07.09.20",
+    "location": "Aalborg",
+    "job_title": "DevOps System Engineer",
+    "bio": "Crazy cat lady in the making ;)"
+  },
+  {
+    "id": 18,
+    "name": "Liam Kemmitt",
+    "img": "./Liam.png",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "DevOps Engineer",
+    "bio": ""
+  },
+  {
+    "id": 19,
+    "name": "Sneha Manikandan",
+    "img": "./Sneha.png",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "Quality Engineer",
+    "bio": "Nature Lover, Traveller"
+  },
+  {
+    "id": 20,
+    "name": "Charlie Martin",
+    "img": "./Charlie.png",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": ""
+  },
+  {
+    "id": 21,
+    "name": "Omar Shah",
+    "img": "./Omar.jpg",
+    "start_date": "07.09.20",
+    "location": "Amsterdam",
+    "job_title": "DevOps Engineer",
+    "bio": "Recent Graduate and food enthusiast. Critical of the tech industry, but optimistic that we can use AI for good."
+  },
+  {
+    "id": 22,
+    "name": "Sabia Egan",
+    "img": "./Sabia.jpg",
+    "start_date": "07.09.20",
+    "location": "Oxford",
+    "job_title": "Software Engineer",
+    "bio": "Biomedical Science graduate. Enjoy cycling and wine."
+  },
+  {
+    "id": 23,
+    "name": "Angharad Beazley",
+    "img": "./Angharad.png",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "Software Engineer",
+    "bio": "Recent graduate into walking, travelling and anything dog related."
+  },
+  {
+    "id": 24,
+    "name": "Avni Bhatt",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "Software Engineer",
+    "bio": ""
+  },
+  {
+    "id": 25,
+    "name": "Thomas Jackson Sillah",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "DevOps Engineer",
+    "bio": ""
+  },
+  {
+    "id": 26,
+    "name": "Jaroslav Stepanenko",
+    "start_date": "07.09.20",
+    "location": "London",
+    "job_title": "Software Engineer",
+    "bio": "There's nothing much to say, other than I particularly like to boogie"
+  }
+]

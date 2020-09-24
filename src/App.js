@@ -3,8 +3,6 @@ import "./App.css";
 import SearchBar from "./component/SearchBars/SearchBar";
 import Header from "./component/Header/Header";
 import Carousel from "./component/Carousel/Carousel";
-import Profile from "./component/Profile/Profile";
-import testData from "./component/Profile/testData";
 import ApiService from "./services/ApiService";
 
 // Main document that outputs things to the webpage
@@ -13,12 +11,13 @@ function App() {
 
   useEffect(() => {
     console.log("hook running");
-    ApiService.getUsersFromApi().then(data => {
+    ApiService.getUsersFromApi().then((data) => {
+      console.log("hello data", data);
       setUserData(data);
     });
-    console.log("Data is here", userData);
-  }, [userData])
+  }, []);
 
+  console.log("Data is here", userData);
 
   return (
     <div className='App'>
@@ -26,7 +25,7 @@ function App() {
         <Header />
         <Carousel />
         <br />
-        <SearchBar />
+        {userData && <SearchBar userData={userData} />}
       </header>
 
       {/* <div className='profile-container'>

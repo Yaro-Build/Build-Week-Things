@@ -11,7 +11,7 @@ function RoleBar({data}){
 			<select>
                 {
                     data && data.map((infoP,index) => (
-                       <DropDownOpt key = {infoP.id} option = {infoP.Role} /> 
+                       <DropDownOpt key = {infoP.id} option = {infoP.job_title} /> 
                     ))
                 }
             </select>

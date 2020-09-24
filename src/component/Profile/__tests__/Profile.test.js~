@@ -1,0 +1,30 @@
+import React from "react";
+import Profile from "../Profile";
+import { render } from "@testing-library/react";
+describe("Profile descriptions - name", () => {
+  it("it should render the Tech Associates name", () => {
+    render(<Profile />);
+    const name = screen.getByText("", { selector: "h1.prof_name" });
+    expect(name).toBeInTheDocument();
+  });
+  it("it should render the Tech Associates role", () => {
+    render(<Profile />);
+    const role = screen.getByText("", { selector: "h5.prof_role" });
+    expect(role).toBeInTheDocument();
+  });
+  it("it should render the Tech Associates location", () => {
+    render(<Profile />);
+    const location = screen.getByText("", { selector: "p.prof_location" });
+    expect(location).toBeInTheDocument();
+  });
+  it("it should render the Tech Associates joining date", () => {
+    render(<Profile />);
+    const date = screen.getByText("", { selector: "p.prof_date" });
+    expect(date).toBeInTheDocument();
+  });
+  it("it should render the Tech Associates Bio", () => {
+    render(<Profile />);
+    const Bio = screen.getByText("", { selector: "p.prof_bio" });
+    expect(Bio).toBeInTheDocument();
+  });
+});
